@@ -15,7 +15,12 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main-desktop.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
 </head>
 
 <body>
@@ -25,12 +30,14 @@
     <div class="wrapper">
         <div class="container">
             <header>
-                <div class="header-topline">
-                    <div class="header-topline-social">
-                        <a href="#" class="header-topline-social-link" target="_blank"><img src="img/social-fb.png" alt=""></a>
-                        <a href="#" class="header-topline-social-link" target="_blank"><img src="img/social-vk.png" alt=""></a>
-                        <a href="#" class="header-topline-social-link" target="_blank"><img src="img/social-pin.png" alt=""></a>
-                        <a href="#" class="header-topline-social-link" target="_blank"><img src="img/social-instagram.png" alt=""></a>
+                <div class="header-fixed" style="display: none;">
+                    <div class="header-logo">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="header-top-contact">
+                        <a href="tel:+7 (495) 641-72-27">+7 (495) 641-72-27</a>
+                        <br>
+                        <p>Пн-Вс 10.00-20.00</p>
                     </div>
                     <div class="header-topline-nav">
                         <ul class="header-topline-nav-menu">
@@ -44,149 +51,190 @@
                             <li class="header-topline-nav-account-login"><a href="#">Вход</a></li>
                         </ul>
                     </div>
-                    <div class="header-topline-wishlist_full">
-                        <a href="#" class="header-topline-wishlist_full-link"><img src="img/wishlist_full.png" alt="">Избранное</a>
-                        <a href="#" class="header-topline-wishlist_helper"><img src="img/helper.png" alt="">
-                            <div class="header-topline-wishlist_helper_tooltip"><img src="img/helper-tooltip.png" alt=""><span>Вы можете отложить понравившиеся вам товары 
+                    <div class="header-topline-wishlist_mini">
+                        <a href="#" class="header-topline-wishlist_full-link"><img src="img/wishlist.png" alt=""></a>
+                    </div>
+                    <div class="header-topline-cart_mini">
+                        <a href="#" class="header-topline-cart-link"><img src="img/cart.png" alt=""></a>
+                        <span class="header-topline-cart-counter">2</span>
+                    </div>
+                    <a href="#" class="catalog-menu-mini"><img src="img/menu-icon-hamburger.png" alt="">Каталог товаров</a>
+                    <div class="header-bottomline-search mini-search">
+                        <input type="text" placeholder="Поиск по сайту">
+                    </div>
+                </div>
+                <div class="header-scrolled">
+                    <div class="header-topline">
+                        <div class="header-topline-social">
+                            <!--noindex-->
+                            <a href="#" class="header-topline-social-link" rel=”nofollow” target="_blank"><img src="img/social-fb.png" alt=""></a>
+                            <!--/noindex-->
+                            <!--noindex-->
+                            <a href="#" class="header-topline-social-link" rel=”nofollow” target="_blank"><img src="img/social-vk.png" alt=""></a>
+                            <!--/noindex-->
+                            <!--noindex-->
+                            <a href="#" class="header-topline-social-link" rel=”nofollow” target="_blank"><img src="img/social-pin.png" alt=""></a>
+                            <!--/noindex-->
+                            <!--noindex-->
+                            <a href="#" class="header-topline-social-link" rel=”nofollow” target="_blank"><img src="img/social-instagram.png" alt=""></a>
+                            <!--/noindex-->
+                        </div>
+                        <div class="header-topline-nav">
+                            <ul class="header-topline-nav-menu">
+                                <li class="header-topline-nav-menu-link"><a href="#">Контакты</a></li>
+                                <li class="header-topline-nav-menu-link"><a href="#">Доставка</a></li>
+                                <li class="header-topline-nav-menu-link"><a href="#">Оплата</a></li>
+                                <li class="header-topline-nav-menu-link"><a href="#">Советы</a></li>
+                            </ul>
+                            <ul class="header-topline-nav-account">
+                                <li class="header-topline-nav-account-register"><a href="#">Регистрация</a></li>
+                                <li class="header-topline-nav-account-login"><a href="#">Вход</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-topline-wishlist_full">
+                            <a href="#" class="header-topline-wishlist_full-link"><img src="img/wishlist_full.png" alt="">Избранное</a>
+                            <a href="#" class="header-topline-wishlist_helper"><img src="img/helper.png" alt="">
+                                <div class="header-topline-wishlist_helper_tooltip"><img src="img/helper-tooltip.png" alt=""><span>Вы можете отложить понравившиеся вам товары 
                             до момента оформления заказа.
                             Если вы отложили отсутствующие товары, в 
                             момент появления их на складе, вам будет направлено 
                             электронное сообщение.</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="header-topline-cart">
-                        <a href="#" class="header-topline-cart-link"><img src="img/cart.png" alt="">Корзина</a>
-                        <span class="header-topline-cart-counter">2</span>
-                    </div>
-                </div>
-                <div class="header-logo">
-                    <a href="#"><img src="img/logo-full.png" alt=""></a>
-                    <a href="#" class="header-logo-location-link">Москва и область</a>
-                </div>
-                <div class="header-category">
-                    <ul class="header-category-list">
-                        <li>
-                            <a href="#">
-                                <img src="img/lustry.png" alt="">
-                                <p>Люстры</p>
-                                <div class="header-category-list-more">
-                                    <div class="header-category-list-more-product-lefttab">
-                                        <p class="header-category-list-more-product-lefttab-heading">ЛЮСТРЫ</p>
-                                        <ul class="header-category-list-more-product-lefttab-list">
-                                            <li><a href="#">Потолочные</a></li>
-                                            <li><a href="#">Для кухни</a></li>
-                                            <li><a href="#">Подвесные</a></li>
-                                            <li><a href="#">Детские</a></li>
-                                            <li><a href="#">На штанге</a></li>
-                                            <li><a href="#">С пультом</a></li>
-                                            <li><a href="#">Хрустальные</a></li>
-                                            <li><a href="#">Без плафонов</a></li>
-                                            <li><a href="#">Со светодиодной<br>подсветкой</a></li>
-                                            <li><a href="#">Деревянные</a></li>
-                                        </ul>
-                                        <ul class="header-category-list-more-product-lefttab-logo_slider">
-                                            <li><img src="img/slider-logo-catmenu-submenu1.png" alt=""></li>
-                                            <li><img src="img/slider-logo-catmenu-submenu2.png" alt=""></li>
-                                            <li><img src="img/slider-logo-catmenu-submenu3.png" alt=""></li>
-                                        </ul>
-                                    </div>
-                                    <div class="header-category-list-more-product-action">
-                                        <img src="img/close.png" alt="" class="header-category-list-more-product-action-close">
-                                        <p class="header-category-list-more-product-action-heading">ТОВАР ДНЯ</p>
-                                        <img src="img/tovar-dnya.jpg" alt="" class="header-category-list-more-product-action-tovardnya">
-                                        <p class="header-category-list-more-product-action-text">Ночник светодиодный с выключателем</p>
-                                        <hr class="header-category-list-more-product-action-text-line">
-                                        <p class="header-category-list-more-product-action-priceblock"><span class="price">4 500</span> <span class="currency">руб.</span></p>
-                                    </div>
                                 </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/svetilniki.png" alt="">
-                                <p>Светильники</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/bra-nastennye.png" alt="">
-                                <p>Бра настенные</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/torshery.png" alt="">
-                                <p>Торшеры</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/nastolnye-lampy.png" alt="">
-                                <p>Настольные лампы</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/osveshenie-dlya-ulitsy.png" alt="">
-                                <p>Освещение для улицы
-                                </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/svetodiodnaya-lenta.png" alt="">
-                                <p>Светодиодная лента
-                                </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/lampochki.png" alt="">
-                                <p>Лампочки</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/mebel.png" alt="">
-                                <p>Мебель</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/postery.png" alt="">
-                                <p>Постеры</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/posuda.png" alt="">
-                                <p>Посуда</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/teplyi-pol.png" alt="">
-                                <p>Теплый пол</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/komplektuyushie.png" alt="">
-                                <p>Комплектующие</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/elektrika.png" alt="">
-                                <p>Электрика</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/novogodnyaya-produktsia.png" alt="">
-                                <p>Новогодняя продукция
-                                </p>
-                            </a>
-                        </li>
-                        <li><a href="#" style="background: #e6e6e6;" class="nohover"><span>>></span><p>Смотреть
-весь каталог</p></a></li>
-                    </ul>
-                </div>
-                <div class="header-bottomline">
-                    <div class="header-bottomline-contact">
-                        <a href="tel:+7 (495) 641-72-27">+7 (495) <span style="font-size: 18px">641-72-27</span></a>
-                        <br>
-                        <p>с 10 до 20 Пн - Вс</p>
+                        </div>
+                        <div class="header-topline-cart">
+                            <a href="#" class="header-topline-cart-link"><img src="img/cart.png" alt="">Корзина</a>
+                            <span class="header-topline-cart-counter">2</span>
+                        </div>
                     </div>
-                    <div class="header-bottomline-search">
-                        <input type="text" placeholder="Поиск по сайту">
+                    <div class="header-logo">
+                        <a href="#"><img src="img/logo-full.png" alt=""></a>
+                        <a href="#" class="header-logo-location-link">Москва и область</a>
+                    </div>
+                    <div class="header-category">
+                        <ul class="header-category-list">
+                            <li>
+                                <a href="#">
+                                    <img src="img/lustry.png" alt="">
+                                    <p>Люстры</p>
+                                    <div class="header-category-list-more">
+                                        <div class="header-category-list-more-product-lefttab">
+                                            <p class="header-category-list-more-product-lefttab-heading">ЛЮСТРЫ</p>
+                                            <ul class="header-category-list-more-product-lefttab-list">
+                                                <li><a href="#">Потолочные</a></li>
+                                                <li><a href="#">Для кухни</a></li>
+                                                <li><a href="#">Подвесные</a></li>
+                                                <li><a href="#">Детские</a></li>
+                                                <li><a href="#">На штанге</a></li>
+                                                <li><a href="#">С пультом</a></li>
+                                                <li><a href="#">Хрустальные</a></li>
+                                                <li><a href="#">Без плафонов</a></li>
+                                                <li><a href="#">Со светодиодной<br>подсветкой</a></li>
+                                                <li><a href="#">Деревянные</a></li>
+                                            </ul>
+                                            <ul class="header-category-list-more-product-lefttab-logo_slider">
+                                                <li><img src="img/slider-logo-catmenu-submenu1.png" alt=""></li>
+                                                <li><img src="img/slider-logo-catmenu-submenu2.png" alt=""></li>
+                                                <li><img src="img/slider-logo-catmenu-submenu3.png" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-category-list-more-product-action">
+                                            <img src="img/close.png" alt="" class="header-category-list-more-product-action-close">
+                                            <p class="header-category-list-more-product-action-heading">ТОВАР ДНЯ</p>
+                                            <img src="img/tovar-dnya.jpg" alt="" class="header-category-list-more-product-action-tovardnya">
+                                            <p class="header-category-list-more-product-action-text">Ночник светодиодный с выключателем</p>
+                                            <hr class="header-category-list-more-product-action-text-line">
+                                            <p class="header-category-list-more-product-action-priceblock"><span class="price">4 500</span> <span class="currency">руб.</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/svetilniki.png" alt="">
+                                    <p>Светильники</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/bra-nastennye.png" alt="">
+                                    <p>Бра настенные</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/torshery.png" alt="">
+                                    <p>Торшеры</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/nastolnye-lampy.png" alt="">
+                                    <p>Настольные лампы</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/osveshenie-dlya-ulitsy.png" alt="">
+                                    <p>Освещение для улицы
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/svetodiodnaya-lenta.png" alt="">
+                                    <p>Светодиодная лента
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/lampochki.png" alt="">
+                                    <p>Лампочки</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/mebel.png" alt="">
+                                    <p>Мебель</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/postery.png" alt="">
+                                    <p>Постеры</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/posuda.png" alt="">
+                                    <p>Посуда</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/teplyi-pol.png" alt="">
+                                    <p>Теплый пол</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/komplektuyushie.png" alt="">
+                                    <p>Комплектующие</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/elektrika.png" alt="">
+                                    <p>Электрика</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/novogodnyaya-produktsia.png" alt="">
+                                    <p>Новогодняя продукция
+                                    </p>
+                                </a>
+                            </li>
+                            <li><a href="#" style="background: #e6e6e6;" class="nohover"><span>>></span><p>Смотреть
+весь каталог</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-bottomline">
+                        <div class="header-bottomline-contact">
+                            <a href="tel:+7 (495) 641-72-27">+7 (495) <span style="font-size: 18px">641-72-27</span></a>
+                            <br>
+                            <p>с 10 до 20 Пн - Вс</p>
+                        </div>
+                        <div class="header-bottomline-search">
+                            <input type="text" placeholder="Поиск по сайту">
+                        </div>
                     </div>
                 </div>
             </header>
@@ -333,12 +381,12 @@
                 </div>
                 <!--КУХНЯ-->
                 <div class="category">
-                    <div class="cat-block">
+                    <div class="cat-block cat-block-kuhnya">
                         <p class="cat-block-more">Все товары
                             <br>категории
                         </p>
                         <div class="circle-block" style="width: 220px;float: left;padding-left: 190px;margin-top: 40px;">
-                            <div class="circle">+</div>
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
                             <div class="cat-catalog">
                                 <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
                                 <img src="img/catalog-popup.png" alt="">
@@ -348,11 +396,27 @@
                                 <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
                             </div>
                         </div>
-                        <div class="circle-block" style="width: 120px;float: right;padding-left: 58px;margin-top: 32px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 100px;float: right;padding-right: 20px;margin-top: 32px;clear: right;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
                         </div>
-                        <div class="circle-block" style="width: 300px;float: left;padding-left: 58px;margin-top: 40px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 100px;float: left;padding-left: 50px;margin-top: 50px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
                         </div>
                         <h1>КУХНЯ</h1>
                     </div>
@@ -477,12 +541,12 @@
                 </div>
                 <!--СПАЛЬНЯ-->
                 <div class="category">
-                    <div class="cat-block">
+                    <div class="cat-block cat-block-spalnya">
                         <p class="cat-block-more">Все товары
                             <br>категории
                         </p>
-                        <div class="circle-block" style="width: 220px;float: left;padding-left: 190px;margin-top: 40px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 280px;float: left;padding-left: 260px;margin-top: 80px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
                             <div class="cat-catalog">
                                 <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
                                 <img src="img/catalog-popup.png" alt="">
@@ -492,11 +556,38 @@
                                 <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
                             </div>
                         </div>
-                        <div class="circle-block" style="width: 120px;float: right;padding-left: 58px;margin-top: 32px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 120px;float: right;padding-right: 50px;margin-top: 70px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
                         </div>
-                        <div class="circle-block" style="width: 300px;float: left;padding-left: 58px;margin-top: 40px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 70px;float: left;padding-left: 58px;margin-top: 30px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
+                        </div>
+                        <div class="circle-block" style="width: 70px;float: left;padding-left: 47px;margin-top: 90px;clear: left;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
                         </div>
                         <h1>СПАЛЬНЯ</h1>
                     </div>
@@ -505,7 +596,7 @@
                         <img src="img/help.png" alt="" class="help-faq">
                         <p>Как рассчитать,
                             <br>сколько света нужно
-                            <br>на кухне?</p>
+                            <br>в спальне?</p>
                         <img src="img/help.png" alt="" class="help-faq">
                         <p>Можно ли получить
                             <br> сертификат качества
@@ -517,7 +608,7 @@
                         <h1>ВИДЕО-ГИД</h1>
                         <img src="img/videoguide.jpg" alt="">
                         <a href="#">4 Совета в выборе<br>
-светильника для кухни</a>
+светильника для спальни</a>
                     </div>
                 </div>
                 <div class="pcard-v">
@@ -621,12 +712,12 @@
                 </div>
                 <!--ГОСТИНАЯ-->
                 <div class="category">
-                    <div class="cat-block">
+                    <div class="cat-block cat-block-gostinnaya">
                         <p class="cat-block-more">Все товары
                             <br>категории
                         </p>
-                        <div class="circle-block" style="width: 220px;float: left;padding-left: 190px;margin-top: 40px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 220px;float: left;padding-left: 260px;margin-top: 73px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
                             <div class="cat-catalog">
                                 <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
                                 <img src="img/catalog-popup.png" alt="">
@@ -636,11 +727,27 @@
                                 <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
                             </div>
                         </div>
-                        <div class="circle-block" style="width: 120px;float: right;padding-left: 58px;margin-top: 32px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 70px;float: right;padding-left: 10px;margin-top: 80px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
                         </div>
-                        <div class="circle-block" style="width: 300px;float: left;padding-left: 58px;margin-top: 40px;">
-                            <div class="circle">+</div>
+                        <div class="circle-block" style="width: 300px;float: left;padding-left: 80px;margin-top: 110px;">
+                            <div class="circle collapsecircle"><i class="fa fa-plus"></i></div>
+                            <div class="cat-catalog">
+                                <a href="#" class="cat-catalog-link">Посмотреть каталог</a>
+                                <img src="img/catalog-popup.png" alt="">
+                                <p class="cat-catalog-text">Кровати и основания
+                                    <br> для спальни</p>
+                                <hr>
+                                <p class="cat-catalog-price">от <span>3 660</span> руб.</p>
+                            </div>
                         </div>
                         <h1>ГОСТИНАЯ</h1>
                     </div>
@@ -649,7 +756,7 @@
                         <img src="img/help.png" alt="" class="help-faq">
                         <p>Как рассчитать,
                             <br>сколько света нужно
-                            <br>на кухне?</p>
+                            <br>для гостиной?</p>
                         <img src="img/help.png" alt="" class="help-faq">
                         <p>Можно ли получить
                             <br> сертификат качества
@@ -661,7 +768,7 @@
                         <h1>ВИДЕО-ГИД</h1>
                         <img src="img/videoguide.jpg" alt="">
                         <a href="#">4 Совета в выборе<br>
-светильника для кухни</a>
+светильника для гостиной</a>
                     </div>
                 </div>
                 <div class="pcard-v">
@@ -795,7 +902,10 @@
                             <br> Бесплатно до 30 кг</li>
                     </ul>
                 </div>
-                <div class="footer-cat">КАТАЛОГ ПРОДУКЦИИ</div>
+                <div class="bottom-main-cat">
+                    <h3>КАТАЛОГ ПРОДУКЦИИ</h3>
+                    <p class="collapse">Свернуть <i class="fa fa-caret-down"></i></p>
+                </div>
                 <div class="bottom-main-cat-container ">
                     <div class="bottom-main-cat-menu">
                         <h3>ЛЮСТРЫ</h3>
@@ -916,12 +1026,41 @@
         <br>
     </div>
     </div>
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-    <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
+<!--collapsible cat circle-->
+<script>
+$(".collapsecircle").click(function() {
+    $(this).parent().children(".cat-catalog").toggle();
+
+
+});
+$(".collapsecircle").click(function() {
+    $(this).find("i").toggleClass('fa-times fa-plus');
+});
+</script>
+<!--bottom main collapsible list cat-->
+<script>
+$(".collapse").click(function() {
+    $(".bottom-main-cat-container").toggle('slow');
+});
+$(".collapse").click(function() {
+    $(this).find("i").toggleClass('fa-caret-up fa-caret-down');
+});
+</script>
+<script>
+$(window).on("scroll", function() {
+    var menu = $(".header-fixed"),
+        begin = $("header").height();
+    if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))
+        if (screen.width > '300' && $(window).width() > '300') {
+            menu.addClass("scrolled").fadeIn(300);
+        }
+    if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")) {
+        menu.removeClass("scrolled").fadeOut(0);
+    }
+});
+</script>
 
 </html>
