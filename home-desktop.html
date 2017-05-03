@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main-desktop.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script>
@@ -238,27 +239,32 @@
                     </div>
                 </div>
             </header>
+
             <div class="home-slider">
-                <div class="slider-nav">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="one-img">
                 <div class="slider-content">
                     <p class="slider-content-heading">ОПЯТЬ ИКЕЯ?</p>
                     <p class="slider-content-text">У нас выбор лучше!</p>
-                    <a href="#" class="slider-content-btn">УБЕДИТЕСЬ САМИ</a>
+                    <a href="#" class="slider-content-btn">УБЕДИТЕСЬ САМИ</a></div>
                 </div>
-                <div class="slider-item"><img src="img/home-desktop-slider.jpg" alt=""></div>
-                <div class="delivery"><img src="img/delivery.png" alt="">
+                <div class="two-img">
+                <div class="slider-content">
+                    <p class="slider-content-heading">ОПЯТЬ ИКЕЯ?</p>
+                    <p class="slider-content-text">У нас выбор лучше!</p>
+                    <a href="#" class="slider-content-btn">УБЕДИТЕСЬ САМИ</a></div>
+                </div>
+            </div>
+            <script>
+    jQuery(document).ready(function(){
+  jQuery('.home-slider').slick({
+dots:true,
+autoplay:false,
+    autoplaySpeed:500,
+    arrows:false
+  });
+});
+</script>
+             <div class="delivery"><img src="img/delivery.png" alt="">
                     <p class="delivery-heading">ДОСТАВКА</p>
                     <p class="delivery-text">Доставим товар до дверей
                         <br>вашего дома</p>
@@ -268,7 +274,6 @@
                     <p class="delivery-text">Выберите удобный вам
                         <br>способ оплаты</p>
                 </div>
-            </div>
             <main>
                 <div class="switcher">
                     <p class="switcher-heading">ОБРАТИТЕ ВНИМАНИЕ
@@ -940,10 +945,26 @@
                 </div>
                 <div class="footer-social-mob">
                     <ul>
-                        <li><!--noindex--><a href="https://www.facebook.com/" rel="nofollow" target="_blank"><img src="img/social-fb.png" alt=""></a><!--/noindex--></li>
-                        <li><!--noindex--><a href="https://vk.com/" rel="nofollow" target="_blank"><img src="img/social-vk.png" alt=""></a><!--/noindex--></li>
-                        <li><!--noindex--><a href="https://www.pinterest.com/" rel="nofollow" target="_blank"><img src="img/social-pin.png" alt=""></a><!--/noindex--></li>
-                        <li><!--noindex--><a href="https://www.instagram.com/" rel="nofollow" target="_blank"><img src="img/social-instagram.png" alt=""></a><!--/noindex--></li>
+                        <li>
+                            <!--noindex-->
+                            <a href="https://www.facebook.com/" rel="nofollow" target="_blank"><img src="img/social-fb.png" alt=""></a>
+                            <!--/noindex-->
+                        </li>
+                        <li>
+                            <!--noindex-->
+                            <a href="https://vk.com/" rel="nofollow" target="_blank"><img src="img/social-vk.png" alt=""></a>
+                            <!--/noindex-->
+                        </li>
+                        <li>
+                            <!--noindex-->
+                            <a href="https://www.pinterest.com/" rel="nofollow" target="_blank"><img src="img/social-pin.png" alt=""></a>
+                            <!--/noindex-->
+                        </li>
+                        <li>
+                            <!--noindex-->
+                            <a href="https://www.instagram.com/" rel="nofollow" target="_blank"><img src="img/social-instagram.png" alt=""></a>
+                            <!--/noindex-->
+                        </li>
                     </ul>
                 </div>
                 <div class="bottom-main-cat">
@@ -1072,6 +1093,6 @@
     </div>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 </body>
-
 </html>
