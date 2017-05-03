@@ -130,7 +130,7 @@ header {
     float: left;
     background: #575757;
     font-size: 14px;
-    font-size: 1.15vw;
+
     line-height: 18px;
 }
 
@@ -186,7 +186,6 @@ header {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    font-size: 1.15vw;
     line-height: 18px;
 }
 
@@ -206,7 +205,6 @@ header {
 }
 
 .header-topline-wishlist_full-link {
-    font-size: 1vw;
     line-height: 18px;
     color: #575757;
     text-decoration: none;
@@ -299,7 +297,7 @@ header {
 
 .header-topline-cart-link {
     font-size: 14px;
-    font-size: 1vw;
+
     color: #575757;
     text-decoration: none;
 }
@@ -319,7 +317,7 @@ header {
     border-radius: 50%;
     color: #fff;
     font-size: 12px;
-    font-size: 1.1vw;
+
     line-height: 22px;
     text-align: center;
     margin: 8px 8px 34px 8px;
@@ -371,7 +369,7 @@ header {
 
 .header-category-list>li>a>p {
     font-size: 14px;
-    font-size: 1.1vw;
+
     line-height: 14px;
     line-height: 3.5vh;
     height: 22px;
@@ -517,7 +515,7 @@ header {
     padding: 15px;
     box-sizing: border-box;
     font-size: 16px;
-    font-size: 1.05vw;
+
     line-height: 18px;
     color: #575757;
 }
@@ -585,13 +583,13 @@ width: 20%;
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-size: 1.1vw;
+
     color: #575757;
 }
 
 .header-bottomline-contact>a {
     font-size: 16px;
-    font-size: 1.1vw;
+
     line-height: 18px;
     color: #575757;
     text-decoration: none;
@@ -599,7 +597,7 @@ width: 20%;
 
 .header-bottomline-contact>a>span {
     font-size: 18px;
-    font-size: 1.2vw;
+
 }
 
 .header-bottomline-contact>a:hover {
@@ -777,14 +775,14 @@ background: transparent;
 .delivery-heading {
     margin: 0 0 15px 0;
     font-size: 18px;
-    font-size: 1.25vw;
+
     line-height: 18px;
     color: #575757;
     text-align: center;
 }
 .delivery-text {
     font-size: 14px;
-    font-size: 1vw;
+
     line-height: 14px;
     margin: 0;
     color: #575757;
@@ -824,7 +822,7 @@ background: transparent;
 }
 .switcher-heading {
     font-size: 18px;
-    font-size: 1.02vw;
+
     height: 46px;
     color: #fff;
     text-align: left;
@@ -907,7 +905,7 @@ background: transparent;
 .switcher-populare-product,
 .switcher-new-arrival {
     font-size: 16px;
-    font-size: .91vw;
+
     line-height: 18px;
     color: #fff;
     font-weight: bold;
@@ -939,7 +937,7 @@ background: transparent;
     height: 79px;
     float: left;
     font-size: 16px;
-    font-size: 1.1vw;
+
     line-height: 18px;
     color: #575757;
     margin: 0;
@@ -949,7 +947,7 @@ background: transparent;
     height: 79px;
     float: right;
     font-size: 18px;
-    font-size: 1.03vw;
+
     line-height: 30px;
     color: #575757;
     margin: 0;
@@ -957,7 +955,7 @@ background: transparent;
 }
 .pcard-h-priced>.price {
     font-size: 36px;
-    font-size: 2.05vw;
+
 }
 .pcard-h:hover {
     cursor: pointer;
@@ -1020,7 +1018,7 @@ background: transparent;
 .pcard-v-text {
     text-align: center;
     font-size: 16px;
-    font-size: .9vw;
+
     line-height: 18px;
     color: #575757;
     margin: 0;
@@ -1032,7 +1030,7 @@ background: transparent;
 }
 .pcard-v-price {
     font-size: 16px;
-    font-size: 1.15vw;
+
     line-height: 30px;
     color: #575757;
     margin: 0;
@@ -1041,7 +1039,7 @@ background: transparent;
 }
 .pcard-v-price>.price {
     font-size: 36px;
-    font-size: 2.05vw;
+
 }
 .pcard-v-brand {
     height: 15px;
@@ -1055,7 +1053,7 @@ background: transparent;
 }
 .pcard-v-bestprice {
     font-size: 16px;
-    font-size: 1.1vw;
+
     line-height: 30px;
     color: #575757;
     margin: 14px 0 0 0;
@@ -1381,7 +1379,7 @@ border-color: transparent transparent #ffffff transparent;
 }
 .faq-block>h1 {
     font-size: 16px;
-    font-size: 1.1vw;
+
     line-height: 18px;
     font-weight: bold;
     color: #575757;
@@ -1391,7 +1389,7 @@ border-color: transparent transparent #ffffff transparent;
 }
 .faq-block>p {
     font-size: 14px;
-    font-size: .93vw;
+
     line-height: 16px;
     color: #575757;
     text-align: left;
@@ -1421,7 +1419,7 @@ border-color: transparent transparent #ffffff transparent;
 }
 .videoguide>h1 {
     font-size: 16px;
-    font-size: 1.1vw;
+
     line-height: 18px;
     font-weight: bold;
     color: #575757;
@@ -1431,7 +1429,7 @@ border-color: transparent transparent #ffffff transparent;
 }
 .videoguide>a {
     font-size: 14px;
-    font-size: .93vw;
+
     line-height: 14px;
     color: #575757;
     display: block;
@@ -1594,7 +1592,7 @@ footer {
 }
 footer>.coryright {
     font-size: 18px;
-    font-size: 1.4vw;
+
     line-height: 18px;
     font-weight: bold;
     color: #fff;
@@ -1617,7 +1615,7 @@ footer>ul>li:after {
 }
 footer>ul>li>a {
     font-size: 16px;
-    font-size: 1.1vw;
+
     line-height: 18px;
     font-weight: bold;
     color: #fff;
