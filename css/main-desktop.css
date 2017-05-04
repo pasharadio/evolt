@@ -78,7 +78,8 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -88,7 +89,8 @@ header {
 }
 
 .scrolled {
-    max-width: 1200px;
+    overflow: hidden;
+    max-width: 100%;
     width: 100%;
     height: 120px;
     background: #fff;
@@ -210,10 +212,12 @@ header {
     text-decoration: none;
     padding-left: 50px;
 }
-.header-fixed.scrolled>.header-topline-wishlist_mini>.header-topline-wishlist_full-link{
+
+.header-fixed.scrolled>.header-topline-wishlist_mini>.header-topline-wishlist_full-link {
     background: none;
     padding-left: 0;
 }
+
 .header-topline-wishlist_full-link>img {
     height: 100%;
 }
@@ -266,11 +270,18 @@ header {
 .header-logo {
     width: 20%;
     float: left;
+    background: url(../img/logo-full.png) top center no-repeat;
+}
+
+.header-logo>a>.logo {
+    width: 100%;
+    height: 100%;
 }
 
 .header-logo-mini {
     width: 10%;
     float: left;
+    background: #fff;
 }
 
 .header-logo>a>img {
@@ -288,6 +299,7 @@ header {
     font-size: 14px;
     color: #575757;
     text-decoration: underline;
+    margin-top: 71%;
 }
 
 .header-topline-cart {
@@ -392,7 +404,7 @@ header {
     margin-top: -15px;
     position: absolute;
     display: none;
-    width: 720px;
+    width: 50%;
     z-index: 2;
     background: #fff;
     padding: 0 27px 0 36px;
@@ -401,7 +413,7 @@ header {
 }
 
 .header-category-list-more-product-lefttab {
-    width: 443px;
+    width: 60%;
     height: 100%;
     float: left;
     padding: 16px 0 18px;
@@ -459,7 +471,7 @@ header {
 }
 
 .header-category-list-more-product-action {
-    width: 213px;
+    width: 39%;
     float: left;
     box-sizing: border-box;
     padding: 16px 0 18px 41px;
@@ -707,6 +719,10 @@ header {
     background: #ededed url(../img/slider-bg.jpg)center no-repeat;
 }
 
+.home-slider .two-img>.slider-content {
+    margin: 0 50%;
+}
+
 .slider-nav {
     position: absolute;
     display: flex;
@@ -719,16 +735,15 @@ header {
 .slick-dots {
     display: block;
     position: absolute;
-    top: 33%;
+    top: 36%;
     left: 20px;
     padding: 0;
     list-style: none;
 }
 
 .slick-dots>li>button {
-    width: 20px;
-    height: 20px;
-    padding: 10px;
+    width: 11px;
+    height: 14px;
     border: 1px solid #575757;
     border-radius: 50%;
     color: transparent;
@@ -943,24 +958,45 @@ background: transparent;
     float: left;
     border: 1px solid #e6e6e6;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 10px 10px 36px;
+    position: relative;
 }
 .pcard-h-brand {
+    width: 96%;
+    height: 25px;
     display: block;
     float: right;
+    background: url(../img/odeonlight.png)top right no-repeat;
+    background-size: contain;
 }
 .pcard-h-product-view {
     margin: 0 auto;
     display: block;
-    width: 72%;
+    width: 60%;
 }
 .pcard-h>hr {
     margin: 41px 0 23px;
     border-top: 1px solid #e6e6e6;
 }
+.pcard-h-bottom{
+     width: 90%;
+    height: 72px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 5%;
+    padding: 15px 0 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #e6e6e6;
+}
+.pcard-h-bottom>.pcard-h-text{
+     width: 50%;
+}
+.pcard-h-bottom>.pcard-h-priced{
+     width: 50%;
+}
 .pcard-h-text {
-    width: 47.44%;
-    height: 79px;
+    width: 100%;
     float: left;
     font-size: 16px;
     line-height: 18px;
@@ -968,14 +1004,14 @@ background: transparent;
     margin: 0;
 }
 .pcard-h-priced {
-    width: 42.5%;
-    height: 79px;
+    width: 100%;
     float: right;
     font-size: 18px;
     line-height: 30px;
     color: #575757;
     margin: 0;
     font-weight: bold;
+    text-align: right;
 }
 .pcard-h-priced>.price {
     font-size: 36px;
@@ -987,6 +1023,7 @@ background: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 .pcard-h-hover {
+    z-index: 2;
     display: none;
     width: 100%;
     height: 320px;
@@ -996,9 +1033,7 @@ background: transparent;
     background: #fff;
 }
 .pcard-h-hover>.pcard-h-brand {
-    margin: 10px 10px 0 80%;
-    display: block;
-    float: left;
+    margin: 10px 10px 0 0;
 }
 .pcard-h:hover .pcard-h-hover {
     display: block;
@@ -1030,13 +1065,15 @@ background: transparent;
     float: left;
     border: 1px solid #e6e6e6;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0;
     position: relative;
 }
 .pcard-v-img {
-    display: block;
-    margin: 0;
-    width: 100%;
+display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 50%;
+    max-height: 168px;
 }
 .pcard-v-text {
     text-align: center;
@@ -1051,31 +1088,50 @@ background: transparent;
     width: 90%;
 }
 .pcard-v-price {
+    position: absolute;
     font-size: 16px;
     line-height: 30px;
     color: #575757;
-    margin: 0;
+    margin: 0px 10%;
     font-weight: bold;
     text-align: center;
+    width: 80%;
+    height: 74px;
+    bottom: 0;
+    padding: 23px 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #e6e6e6;
 }
 .pcard-v-price>.price {
     font-size: 36px;
 }
-.pcard-v-brand {
+.pcard-v-brand  {
     height: 15px;
     float: right;
     display: block;
-    width: 75px;
+    width: 100%;
+    max-width: 240px;
+    margin: 10px 10px 0 0;
+
+}
+.idlamp{
+      background: url(../img/idLamp-logo.png)center right no-repeat;  
+}
+.empty{
+    background: none;
 }
 .pcard-v-brand>img {
     height: 100%;
     display: block;
 }
 .pcard-v-bestprice {
+    position: absolute;
+    bottom: 0;
     font-size: 16px;
     line-height: 30px;
     color: #575757;
-    margin: 14px 0 0 0;
+    margin: 0 10px 10px 10px;
+    width: 93%;
     font-weight: bold;
     text-align: center;
     padding: 2px 0 9px;
@@ -1119,15 +1175,16 @@ border-color: transparent transparent #ffffff transparent;
     display: none;
 }
 .pcard-v:hover .pcard-v-hover {
-    width: 238px;
-    height: 318px;
+width: 100%;
+    height: 100%;
     float: left;
     display: block;
     background: #fff;
     overflow: hidden;
     box-sizing: border-box;
-    margin: -10px;
+    margin: 0;
     position: absolute;
+    z-index: 2;
 }
 .pcard-v-img-fleft {
     display: block;
@@ -1168,6 +1225,14 @@ border-color: transparent transparent #ffffff transparent;
     box-sizing: border-box;
 }
 .pcard-v-hover-botblockbtn {
+    width: 100%;
+    height: 120px;
+    display: block;
+    float: left;
+    position: absolute;
+    bottom: 0;
+}
+.pcard-v-hover-blockbtn {
     width: 100%;
     height: 60px;
     display: block;
@@ -1222,14 +1287,17 @@ border-color: transparent transparent #ffffff transparent;
     padding: 10px;
 }
 .discount {
+position: absolute;
+    bottom: 0;
     font-size: 16px;
     line-height: 30px;
     color: #fff;
-    margin: 14px 0 0 0;
+    margin: 0 10px 10px 10px;
+    width: 93%;
     font-weight: bold;
     text-align: center;
     padding: 2px 0 9px;
-    background:#575757 url(../img/corner-yellow.jpg)right bottom no-repeat;
+    background: #575757 url(../img/corner-yellow.jpg)right bottom no-repeat;
 }
 .discount>.discount-pricetext {
     font-weight: normal;
@@ -1265,8 +1333,12 @@ border-color: transparent transparent #ffffff transparent;
 .pcard-v-oldprice {
     font-size: 14px;
     line-height: 14px;
+    font-weight: normal;
     color: #575757;
-    margin: -16px 0 12px 11px;
+    bottom: 40px;
+    position: absolute;
+    margin-top: 5px;
+    left: 20%;
 }
 .pcard-v-oldprice:after {
     content: '';
@@ -1478,6 +1550,7 @@ border-color: transparent transparent #ffffff transparent;
     display: block;
     float: left;
     background: url(../img/main-bottom.jpg)center no-repeat;
+        background-size: cover;
 }
 .main-bottom>h2 {
     font-size: 22px;
@@ -1529,6 +1602,7 @@ border-color: transparent transparent #ffffff transparent;
     float: left;
     padding: 50px 40px 29px;
     box-sizing: border-box;
+    border-top: 1px solid #e6e6e6;
 }
 .bottom-main-cat-menu:last-child {
     border-bottom: 0;
