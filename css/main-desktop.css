@@ -1013,6 +1013,9 @@ background: transparent;
     font-weight: bold;
     text-align: right;
 }
+.product-text-block-right>.pcard-h-priced{
+    text-align: left;
+}
 .pcard-h-priced>.price {
     font-size: 36px;
 }
