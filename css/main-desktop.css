@@ -2010,7 +2010,7 @@ footer>ul>li>a {
     .mini-search:hover input {
         display: block;
     }
-    .header-bottomline-search>input {
+    .header-bottomline-search:hover>input {
         width: 100%;
         position: absolute;
         background: #fedf22;
