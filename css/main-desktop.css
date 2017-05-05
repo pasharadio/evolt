@@ -270,7 +270,7 @@ header {
 .header-logo {
     width: 20%;
     float: left;
-    background: url(../img/logo-full.png) top center no-repeat;
+    //background: url(../img/logo-full.png) top center no-repeat;
 }
 
 .header-logo>a>.logo {
@@ -299,7 +299,7 @@ header {
     font-size: 14px;
     color: #575757;
     text-decoration: underline;
-    margin-top: 71%;
+
 }
 
 .header-topline-cart {
@@ -1720,6 +1720,7 @@ footer>ul>li>a {
 (-o-min-device-pixel-ratio: 5/4),
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {}
+
 @media screen and (min-width: 768px) {
     .header-fixed {
         display: none;
