@@ -669,6 +669,7 @@ header {
     display: block;
     float: left;
     padding: 24px 44px;
+    box-sizing: border-box;
 }
 .reviewform-wrapper>h1{
     margin: 0 0 30px 0;
@@ -1099,6 +1100,13 @@ footer>ul>li>a {
     .mini-search {
         width: 55%;
     }
+    .reviewform-wrapper{
+    width: 100%;
+        padding: 30px;
+}
+.review-share {
+    width: 24%;
+    }
     .form-wrapper {
         padding: 80px 5% 130px 5%;
     }
@@ -1106,6 +1114,28 @@ footer>ul>li>a {
         width: 47%;
         padding: 0 7%;
     }
+    .star-rating {
+    width: 100%;
+}
+.review-star-text {
+    padding: 17px 32px 32px 0;
+}
+.review-share {
+    width: 60%;
+    display: block;
+    float: left;
+    margin: 30px 0;
+}
+.reviewform-wrapper>form>input[type="name"]{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.reviewform-wrapper>form>input[type="email"]{
+    width: 100%;
+}
+.reviewform-wrapper>form>input[type="submit"]{
+    width: 100%;
+}
     .tablet-hidden {
         display: none;
         visibility: hidden;
