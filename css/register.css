@@ -738,6 +738,7 @@ text-decoration: underline;
         width: 65%;
     display: block;
     float: left;
+    position: relative;
 }
 form>label[for="firstname"]{
     font-size: 14px;
@@ -749,6 +750,9 @@ form>label[for="firstname"]{
     box-sizing: border-box;
 }
 form>label[for="lastname"]{
+        position: absolute;
+    top: 0;
+    right: 0;
     font-size: 14px;
     line-height: 14px;
     color: #333;
@@ -766,6 +770,7 @@ form>input[name="firstname"]{
     border-bottom: 1px solid #696969;
     margin-bottom: 38px;
             box-sizing: border-box;
+            clear: left;
 }
 form>input[name="lastname"]{
     width: 44%;
@@ -837,6 +842,9 @@ form>label[for="reenter-password"]{
     display: block;
     float: right;
         box-sizing: border-box;
+        position: absolute;
+    right: 0;
+    top: 215px;
 }
 form>input[type="password"]{
     width: 44%;
@@ -847,6 +855,7 @@ form>input[type="password"]{
     border-bottom: 1px solid #696969;
     margin-bottom: 10px;
             box-sizing: border-box;
+            clear: left;
 }
 form>input[type="password"]:focus{
         border: 1px solid #696969;
@@ -863,6 +872,7 @@ form>input[name="reenter-password"]{
     border-bottom: 1px solid #c91c5b;
         margin-bottom: 10px;
                 box-sizing: border-box;
+                    clear: right;
 }
 form>input[name="reenter-password"]:focus{
         border: 1px solid #c91c5b;
@@ -1164,42 +1174,26 @@ footer>ul>li>a {
     .mini-search {
         width: 55%;
     }
-    .reviewform-wrapper {
-        width: 100%;
-        padding: 30px;
-    }
-    .review-share {
-        width: 24%;
-    }
-    .form-wrapper {
-        padding: 80px 5% 130px 5%;
-    }
-    .reg-social {
-        width: 47%;
-        padding: 0 7%;
-    }
-    .star-rating {
-        width: 100%;
-    }
-    .review-star-text {
-        padding: 17px 32px 32px 0;
-    }
-    .review-share {
-        width: 60%;
-        display: block;
-        float: left;
-        margin: 30px 0;
-    }
-    .reviewform-wrapper>form>input[type="name"] {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .reviewform-wrapper>form>input[type="email"] {
-        width: 100%;
-    }
-    .reviewform-wrapper>form>input[type="submit"] {
-        width: 100%;
-    }
+     
+.registerform-wrapper{
+    padding: 30px;
+}
+.register-social>ul {
+    padding: 0;
+}
+.register-social>ul>li>a {
+    margin: 0;
+}
+.registerform-wrapper>form {
+    width: 100%;
+}
+
+
+
+
+
+
+
     .tablet-hidden {
         display: none;
         visibility: hidden;
@@ -1323,6 +1317,63 @@ footer>ul>li>a {
     .form-wrapper {
         padding: 30px;
     }
+    .title {
+    height: 200px;
+}
+.title>h1{
+    width: 100%;
+}
+.title>p{
+    padding: 0;
+        margin-bottom: 30px;
+}
+.register-social {
+    width: 100%;
+}
+.register-social>p {
+    text-align: left;
+    }
+    form>label[for="firstname"], form>label[for="lastname"]{
+        width: 100%;
+        position: relative;
+    }
+form>input[name="firstname"], form>input[name="lastname"]{
+    width: 100%;
+}
+form>.emailrequired{
+font-size: 10px;
+}
+form>label[for="password"]{
+    width: 100%;
+}
+form>label[for="reenter-password"]{
+    width: 100%;
+    position: relative;
+        top: 0;
+}
+form>input[type="password"]{
+    width: 100%;
+}
+form>input[name="password"] {
+    margin-bottom: 30px;
+}
+form>.passwordrequired{
+    width: 100%;
+        margin-bottom: 30px;
+}
+form>input[type="submit"]{
+    width: 100%;
+}
+.header-fixed {
+    height: 128px;
+}
+
+.header-logo>a>img {
+    margin: 11% auto;
+}
+
+
+
     .footer-social-mob {
         width: 100%;
         height: 65px;
