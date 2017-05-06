@@ -25,7 +25,7 @@ $(".collapse").click(function() {
 
 // media query event handler
 if (matchMedia) {
-    var mq = window.matchMedia("(max-width: 768px)");
+    var mq = window.matchMedia("(max-width: 1000px)");
     mq.addListener(WidthChange);
     WidthChange(mq);
 }
@@ -101,6 +101,24 @@ jQuery(document).ready(function() {
         //focusOnSelect: true,
         infite:true,
         draggable:true,
+       
+    });
+});
+jQuery(document).ready(function() {
+    jQuery('.home-partial-product-slider>.mob-treeslider').slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1200,
+        speed:400,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        //asNavFor: '.slider-for',
+        centerMode: true,
+        //centerPadding: '20%',
+        //focusOnSelect: true,
+        infite:true,
+        //draggable:true,
        
     });
 });
