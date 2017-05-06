@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Вход</title>
+    <title>Отзыв</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -78,13 +78,24 @@
                         <li><a href="#">Потолочные</a></li>
                     </ul>
                 </div>
-                <div class="form-wrapper">
-                    <div class="register">
-                        <h2>НОВЫЙ ПОКУПАТЕЛЬ</h2>
-                        <input type="submit" value="Регистрация">
-                        <!-- <button>Регистрация</button> -->
-                        <p>ИЛИ ВОЙДИТЕ С ПОМОЩЬЮ:</p>
-                        <div class="reg-social">
+                <div class="reviewform-wrapper">
+                    <h1>Люстра подвесная KUGEL II WE314.06.503 IDLamp</h1>
+                    <p class="review-star-text">Оцените продукт:</p>
+                    <div class="star-rating">
+                        <div class="star-rating__wrap">
+                            <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                            <label class="star-rating__ico fa fa-star fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                            <label class="star-rating__ico fa fa-star fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                            <label class="star-rating__ico fa fa-star fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                            <label class="star-rating__ico fa fa-star fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                            <label class="star-rating__ico fa fa-star fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                        </div>
+                    </div>
+                     <div class="review-share">
                             <ul>
                                 <li>
                                     <!--noindex-->
@@ -112,18 +123,13 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="login">
-                        <h2>ПОСТОЯННЫЙ ПОКУПАТЕЛЬ</h2>
                         <form action="">
-                            <label for="email">EMAIL</label>
-                            <input type="email">
-                            <label for="password">ПАРОЛЬ</label>
-                            <input type="password">
-                            <a href="#">ЗАБЫЛИ ПАРОЛЬ?</a>
-                            <input type="submit" value="Войти">
+                            <label for="name">Ваше имя</label>
+                            <input type="name" placeholder="Ирина">
+                            <input type="email"  placeholder="Email">
+                            <textarea name="review" id="" cols="30" rows="10" placeholder="Отзыв"></textarea>
+                            <input type="submit">
                         </form>
-                    </div>
                 </div>
                 <div class="footer-social-mob">
                     <ul>
