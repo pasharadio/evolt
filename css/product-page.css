@@ -853,7 +853,7 @@ header {
     line-height: 14px;
     color: #575757;
     margin-top: 13px;
-        white-space: nowrap;
+    white-space: nowrap;
     float: left;
 }
 
@@ -1012,7 +1012,10 @@ header {
     color: #575757;
 }
 
-.product-attribute p input[id="color1"]:checked ~ label[for="color1"],input[id="color2"]:checked ~ label[for="color2"],input[id="color3"]:checked ~ label[for="color3"],input[id="color4"]:checked ~ label[for="color4"] {
+.product-attribute p input[id="color1"]:checked ~ label[for="color1"],
+input[id="color2"]:checked ~ label[for="color2"],
+input[id="color3"]:checked ~ label[for="color3"],
+input[id="color4"]:checked ~ label[for="color4"] {
     background: #575757;
     color: #fff;
 }
@@ -1075,7 +1078,7 @@ header {
 
 .product-tabs-wrapper {
     width: 100%;
-    height: 450px;
+    height: 580px;
     border-bottom: 1px solid #e6e6e6;
     display: block;
     float: left;
@@ -1179,6 +1182,221 @@ header {
     line-height: 30px;
     color: #575757;
     margin: 50px 0 0 0;
+}
+
+#tab4 {
+    width: 100%;
+    padding: 50px 42px 30px 42px;
+    //display: block;
+    float: left;
+    box-sizing: border-box;
+}
+
+.review-meta {
+    width: 100%;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-bottom: 17px;
+}
+
+.review-star-card {
+    width: 50px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: #ffcc00;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 6px;
+    box-sizing: border-box;
+}
+
+.review-star-card>.fa-star {
+    color: #fff;
+}
+
+.review-star-quantity {
+    float: right;
+}
+
+.review-pretext {
+    font-size: 16px;
+    list-style: 16px;
+    font-weight: bold;
+    color: #575757;
+}
+
+.review-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #575757;
+    margin: 15px 0 60px;
+}
+
+.review-card-wrapper {
+    width: 57%;
+    display: block;
+    float: left;
+    color: #575757;
+}
+
+.review-card {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.review-name {
+    width: auto;
+    height: 30px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    margin: 5px 0 0 0;
+    padding: 0 25px;
+}
+
+.review-date {
+    width: auto;
+    height: 30px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: #7e7e7e;
+    margin: 5px 0 0 0;
+    padding: 0 25px;
+}
+
+.review-more {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #575757;
+    font-weight: bold;
+    border: 1px solid #e6e6e6;
+}
+.sidecard-wrapper{
+    width: 34%;
+    height: 100%;
+    display: block;
+    float: right;
+}
+.average-rating-card{
+    width: 100%;
+    height: 212px;
+    background: #eee;
+    padding: 34px 0 38px;
+    box-sizing: border-box;
+}
+.average-rating-heading{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #575757;
+    margin: 0 0 28px 0;
+    text-align: center;
+}
+.average-rating-heading>span{
+    color: #ffcc00;
+}
+.average-rating-card>.whitestar{
+text-align: center;
+    display: block;
+    margin: 0 auto 30px;
+    float: none;
+}
+.average-rating-card>.whitestar>.star-rating__wrap {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 auto;
+}
+.average-rating-card>.whitestar>.star-rating__wrap>.star-rating__ico{
+color: #ffffff;
+}
+.rating-conclision{
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+    margin: 0;
+    color: #575757;
+    text-align: center;
+}
+.sidereview-card{
+    width: 100%;
+    height: 212px;
+    border:1px solid #e6e6e6;
+    padding: 12px 0 20px;
+    margin-top: 27px;
+    text-align: center;
+}
+.sidereview-card>.review-icon{
+    margin-bottom: 20px;
+}
+.sidereview-heading{
+    font-size: 16px;
+    line-height: 30px;
+    color: #575757;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.sidereview-text{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #575757;
+    margin: 0 0 20px 0;
+}
+.sidereview-submit{
+    width: 180px;
+    height: 50px;
+    background: #ffcc00;
+    display:block;
+    margin: 0 auto;
+    color: #fff;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.related-product {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
 }
 
 .switcher {
