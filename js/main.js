@@ -9,7 +9,7 @@ $(".collapsecircle").click(function() {
 });
 <!--bottom main collapsible list cat-->
 $(document).ready(function() {
-        $(".bottom-main-cat-container").hide();
+    $(".bottom-main-cat-container").hide();
 
     $(".collapse").click(function() {
         $(".bottom-main-cat-container").toggle();
@@ -17,6 +17,13 @@ $(document).ready(function() {
     $(".collapse").click(function() {
         $(this).find("i").toggleClass('fa-caret-up fa-caret-down');
     });
+});
+$(".panelp").show();
+$(".coollp").click(function() {
+    $(this).children(".panelp").toggle();
+});
+$(".coollp").click(function() {
+    $(this).find("i").toggleClass('fa-angle-up fa-angle-down');
 });
 <!--collapsible tabs mob-->
 $(".collapse_tabs").click(function() {
@@ -40,10 +47,12 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+$(document).ready(
+    function() {
+        $(".scrollbar").niceScroll();
+    }
 
-
-
-
+);
 
 
 
@@ -196,3 +205,6 @@ jQuery(document).ready(function() {
         }]
     });
 });
+
+
+

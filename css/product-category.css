@@ -729,6 +729,7 @@ header {
     background: #e6e6e6;
     padding: 25px 37px 0 40px;
         box-sizing: border-box;
+        text-align: left;
 }
 
 
@@ -894,6 +895,204 @@ header {
     color: #333;
     text-decoration: underline;
 }
+    div.coollp {
+        background:transparent;
+        cursor: pointer;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    font-size: 16px;
+    color: #575757;
+    font-weight: bold;
+    padding-bottom: 45px;
+        display: block;
+    float: left;
+    }
+    div.panelp {
+        padding: 0;
+display: none;
+        //overflow: hidden;
+        transition: 0.2s ease-out;
+        max-height: 230px;
+    }
+    div.coollp>p{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    div.coollp>p>i {
+        float: right;
+            margin: 3px 0;
+    }
+    .panelp>input[type="checkbox"]{
+visibility: hidden;
+    float: left;
+    display: block;
+    margin-right: 100%;
+    height: 0;
+    }
+    .panelp>label{
+    font-size: 16px;
+    color: #575757;
+    font-weight: normal;
+    margin-right: 12px;
+    height: 20px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    }
+.panelp>label:before{
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    background: #fff;
+        display: block;
+    float: left;
+margin: 3px 12px 1px 0;
+}
+.panelp>input[type="checkbox"]:checked + label:before{
+        background: #ffcc00 url(../img/checkbox-filter.png) no-repeat center;
+}
+.panelp>span{
+    font-size: 12px;
+        color: #b6b6b6;
+        font-weight: normal;
+            margin: 4px 0;
+            display: block;
+            float: left;
+}
+.panelp>a{
+    width: 100%;
+    margin: 0 0 10px 28px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #404040;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+
+/* Ширина слайдера */
+#slider {
+    width: 100%;
+    margin: 0 auto;
+}
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 13px;   /* Задаем нужную ширину */
+    height: 13px;  /* и высоту */
+    background: #ffcc00;
+    cursor: pointer
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+     height: 9px; /* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle { 
+    top: -8px;
+    margin-left: 0;
+    width: 9px;
+    height: 24px;
+    border-radius: 0px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min { 
+    left: 90px;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 9px;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content { 
+    border: 0px solid #D4D4D4;
+    background: #b6b6b6;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header { 
+    background: #b6b6b6;
+        border-radius: 5px;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.sliderCont{
+    height: 9px;
+    padding: 23px 0;
+    width: 96%;
+}
+input[type="text"]{
+ width:50px;
+}
+.ui-slider-range.ui-corner-all.ui-widget-header{
+ background:#ffcc00;
+}
+.formCost{
+        font-size: 16px;
+    color: #b6b6b6;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formCost>input[type="text"]{
+width: 50px;
+    height: 30px;
+    text-align: center;
+    color: #575757;
+    font-weight: bold;
+    border:0;
+    }
+.formCost>#maxCost{
+    float: right;
+}
+.product-category-filter>input[type="reset"]{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #575757;
+    margin-top: 25px;
+    text-decoration: underline;
+    border: 0;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
 
 .product-thumb-wrapper {
     width: 10%;

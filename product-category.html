@@ -24,6 +24,10 @@
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -89,8 +93,77 @@
                     </span>
                 </div>
                 <div class="product-category-wrapper">
-                    <div class="product-category-filter">
-                    </div>
+                    <form class="product-category-filter">
+                        <div class="coollp"><p>Бренд <i class="fa fa-angle-down"></i></p>
+                            <hr>
+                            <div class="panelp">
+                                <input id="ch-a1" type="checkbox">
+                                <label for="ch-a1">Odeon light</label><span class="ch-a1-q">15</span>
+                                <input id="ch-a2" type="checkbox">
+                                <label for="ch-a2">Citilux</label><span class="ch-a2-q">6</span>
+                                <input id="ch-a3" type="checkbox">
+                                <label for="ch-a3">Citilux</label><span class="ch-a3-q">47</span>
+                                <a href="#">Все</a>
+                            </div>
+                        </div>
+                        <div class="coollp"><p>Цвет арматуры<i class="fa fa-angle-down"></i></p>
+                            <hr>
+                            <div class="panelp scrollbar">
+                                <input id="ch-b1" type="checkbox">
+                                <label for="ch-b1">Серебристый</label><span class="ch-b1-q">26</span>
+                                <input id="ch-b2" type="checkbox">
+                                <label for="ch-b2">Золотистый</label><span class="ch-b2-q">53</span>
+                                <input id="ch-b3" type="checkbox">
+                                <label for="ch-b3">Бронза</label><span class="ch-b3-q">4</span>
+                                <input id="ch-b4" type="checkbox">
+                                <label for="ch-b4">Никель</label><span class="ch-b4-q">15</span>
+                                <input id="ch-b5" type="checkbox">
+                                <label for="ch-b5">Красный</label><span class="ch-b5-q">5</span>
+                                <input id="ch-b6" type="checkbox">
+                                <label for="ch-b6">Розовый</label><span class="ch-b6-q">5</span>
+                                <input id="ch-b7" type="checkbox">
+                                <label for="ch-b7">Зеленый</label><span class="ch-b7-q">4</span>
+                                <input id="ch-b8" type="checkbox">
+                                <label for="ch-b8">Светлое дерево</label><span class="ch-b8-q">1</span>
+                            </div>
+                        </div>
+                        <div class="coollp"><p>Количество
+                            <br>лампочек, шт<i class="fa fa-angle-down"></i></p>
+                            <hr>
+                            <div class="panelp">
+                                <div class="sliderCont">
+                                    <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                        <div class="ui-slider-range ui-widget-header" style="left: 5%; width: 100%;"></div>
+                                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 4%;"></a>
+                                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="right: 5%;"></a>
+                                    </div>
+                                </div>
+                                <div class="formCost">
+                                    <label for="minCost">от</label>
+                                    <input type="text" id="minCost" value="0">
+                                    <label for="maxCost">до</label>
+                                    <input type="text" id="maxCost" value="1000">
+                                </div>
+                                <script>
+                                jQuery("#slider").slider({
+                                    min: 0,
+                                    max: 1000,
+                                    values: [0, 1000],
+                                    range: true,
+                                    stop: function(event, ui) {
+                                        jQuery("input#minCost").val(jQuery("#slider").slider("values", 0));
+                                        jQuery("input#maxCost").val(jQuery("#slider").slider("values", 1));
+                                    },
+                                    slide: function(event, ui) {
+                                        jQuery("input#minCost").val(jQuery("#slider").slider("values", 0));
+                                        jQuery("input#maxCost").val(jQuery("#slider").slider("values", 1));
+                                    }
+                                });
+                                </script>
+                            </div>
+                        </div>
+                        <input type="reset" value="Сбросить все фильтры">
+                    </form>
                     <div class="pcard-v tablet-hidden">
                         <div class="pcard-v-brand empty"></div>
                         <img class="pcard-v-img" src="img/2252-5Cs.png" alt="">
@@ -268,12 +341,10 @@
                         <div class="pagination-number">Страница <span class="pgn-start">1</span> из <span class="pgn-total">156</span><span class="pgn-arrow"><i class="fa fa-angle-left fa-2x pgn-arrow-prev"></i> <i class="fa fa-angle-right fa-2x pgn-arrow-next"></i></span></div>
                     </div>
                     <div class="product-category-description">
-                        <p><strong>Потолочные люстры по низким ценам</strong>
-С тех пор, как было изобретено электричество, светильники, люстры или бра, стали для человечества просто незаменимой вещью. Ведь и правда, редко кто сейчас пользуется свечами или керосиновыми лампами, если только для создания романтической атмосферы или при отсутствии того же электричества.
-<br>
-<br>
-Магазин микслайт предоставляет одни из самых лучших выборов люстр и светильников мирового производителя. Например, асортимент люстр потолочных, интернет магазина один из самых широких в Москве. Ведь мы понимаем как важен для вас процесс строительства и обустройства собственного жилья и mixlight желает сделать ваш дом ярким, светлым и уютным.
-</p>
+                        <p><strong>Потолочные люстры по низким ценам</strong> С тех пор, как было изобретено электричество, светильники, люстры или бра, стали для человечества просто незаменимой вещью. Ведь и правда, редко кто сейчас пользуется свечами или керосиновыми лампами, если только для создания романтической атмосферы или при отсутствии того же электричества.
+                            <br>
+                            <br> Магазин микслайт предоставляет одни из самых лучших выборов люстр и светильников мирового производителя. Например, асортимент люстр потолочных, интернет магазина один из самых широких в Москве. Ведь мы понимаем как важен для вас процесс строительства и обустройства собственного жилья и mixlight желает сделать ваш дом ярким, светлым и уютным.
+                        </p>
                     </div>
                 </div>
             </main>
@@ -443,6 +514,9 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/9.2.0/nouislider.min.js"></script>
+
 </body>
 
 </html>
