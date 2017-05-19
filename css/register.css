@@ -919,11 +919,79 @@ form>input[type="submit"]{
     width: 20%;
     height: 60px;
     float: left;
-    background: #e6e6e6;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 16px;
     color: #575757;
+    transition: all .2s linear;
+    position: relative;
+}
+
+.catalog-menu-mini.bg1 {
+    background: #e6e6e6 url(../img/menu-icon-hamburger.png) left center no-repeat;
+}
+
+.catalog-menu-mini.bg2 {
+    background: #e6e6e6 url(../img/menu-icon-hamburger-close.png) left center no-repeat;
+    //color:#e6e6e6;
+}
+
+.menu-gamburger-cat-wrapper {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 80%;
+    background: white;
+    z-index: 12;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.menu-gamburger-cat-wrapper>.menu-gamburger-cat {
+    display: block;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-gamburger-cat>li {
+    width: 12.5%;
+    height: 120px;
+    border: 1px solid #e6e6e6;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.menu-gamburger-cat>li:last-child>a>span{
+    color: #575757;
+}
+.menu-gamburger-cat>li:last-child>a>p{
+    color: #575757;
+}
+.menu-gamburger-cat>li>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #6a6a6a;
+    text-decoration: none;
+}
+.menu-gamburger-cat>li>a:active{
+    background: #6f6f6f;
+}
+.menu-gamburger-cat>li>a>img {
+    width: 100%;
+}
+
+.menu-gamburger-cat>li>a>p {
+    margin: 0;
+}
+
+.menu-gamburger-cat>li>a>span {
+    font-size: 48px;
+    font-size: 3.3em;
 }
 
 .header-bottomline-contact>a {
@@ -1122,6 +1190,43 @@ footer>ul>li>a {
     }
     .header-scrolled {
         display: none;
+    }
+        .menu-gamburger-cat-wrapper {
+        width: 100%;
+        height: 360px;
+    overflow-y: scroll;
+        top: 120px;
+        background: #575757;
+    }
+    .menu-gamburger-cat>li {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #626262;
+    }
+    .menu-gamburger-cat>li>a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-gamburger-cat>li>a>img {
+        width: auto;
+        height: 80%;
+        margin-top: -20px;
+    }
+    .catalog-menu-mini.bg1 {
+        background-position: center;
+    }
+    .catalog-menu-mini.bg2 {
+        background-position: center;
+    }
+    .catalog-menu-mini>span {
+        visibility: hidden;
     }
     .header-logo {
         width: 15%;
