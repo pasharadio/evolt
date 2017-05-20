@@ -667,7 +667,7 @@ header {
 }
 
 .title-wrapper {
-    width: 100%;
+    width: 60%;
     height: 96px;
     display: block;
     float: left;
@@ -684,19 +684,23 @@ header {
     float: left;
 }
 
-.title-wrapper>.product-total-counter {
+.product-total-counter {
     font-size: 16px;
     line-height: 38px;
     color: #b6b6b6;
     padding-left: 20px;
 }
 
-.title-wrapper>.product-sort-wrapper {
+.product-sort-wrapper {
+    width: 40%;
+    height: 96px;
+    padding: 36px 20px;
     float: right;
     display: block;
+    box-sizing: border-box;
 }
 
-.title-wrapper>.product-sort-wrapper>.product-sort {
+.product-sort-wrapper>.product-sort {
     font-size: 16px;
     line-height: 38px;
     color: #b6b6b6;
@@ -704,7 +708,7 @@ header {
     display: block;
 }
 
-.title-wrapper>.product-sort-wrapper>.product-sort>ul {
+.product-sort-wrapper>.product-sort>ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -712,13 +716,13 @@ header {
     float: right;
 }
 
-.title-wrapper>.product-sort-wrapper>.product-sort>ul>li {
+.product-sort-wrapper>.product-sort>ul>li {
     display: block;
     float: left;
     margin-left: 20px;
 }
 
-.title-wrapper>.product-sort-wrapper>.product-sort>ul>li>a {
+.product-sort-wrapper>.product-sort>ul>li>a {
     color: #575757;
 }
 
@@ -2716,8 +2720,8 @@ form>input[type="submit"] {
 }
 
 .menu-gamburger-cat>li>a>span {
-    font-size: 48px;
-    font-size: 3.3em;
+font-size: 98px;
+    line-height: 60px;
 }
 
 .header-bottomline-contact>a {
@@ -3027,7 +3031,6 @@ footer>ul>li>a {
     .product-sort-wrapper>.product-sort {
         color: #575757!important;
         width: 130px;
-        background: #fff;
     }
     .product-sort-wrapper>.product-sort>ul {
         position: absolute;
@@ -3345,20 +3348,100 @@ text-transform:uppercase;
     height: 64px;
     padding: 28px 21px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.product-sort-wrapper {
+    width: 100%;
+    height: 64px;
+    padding: 26px 20px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    background: #e6e6e6;
+}
+.product-filter{
+    line-height: 18px;
+}
+.product-sort-wrapper>.product-sort{
+    float: left;
+    line-height: 18px;
+}
+.product-sort-wrapper>.product-sort>ul {
+    box-shadow: 0 0 5px #000;
+    z-index: 2;
+        margin-top: 22px;
+    width: 130px;
+}
+.product-sort-wrapper>.product-sort>ul>li {
+    margin: 10px 20px 10px 20px;
+}
+.pcard-v{
+    width: 50%;
+    height: 300px!important;
+}
+.product-category-filter{
+    width: 100%;
+    padding: 9px 0;
+}
+.product-category-filter>.title-wrapper {
+    height: 64px;
+    padding-top: 26px;
+}
+.product-filter-backlink{
+    float: right;
+}
+.product-filter-backlink {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: -3px;
+    }
+    div.coollp{
+        width: 55%;
+        margin-left: 37px;
+            padding-bottom: 10px;
+    }
+form>input[type="submit"] {
+    width: 68%!important;
+    margin: 50px 16% 0;
+}
+.product-category-filter>input[type="reset"]{
+    margin: 25px auto 47px;
+}
+.pcard-v-price{
+    font-size: 14px;
+}
+.pcard-v-price>.price{
+    margin-left: -10%;
+}
+.pcard-h {
+    width: 100%;
+    height: 300px;
+}
+.pcard-h-priced>.price {
+    font-size: 28px;
+}
+.pcard-h-text{
+    font-size: 12px;
+}
+.pcard-h-priced{
+    font-size: 14px;
+}
+.pcard-h-hover{
+    height: 300px;
+}
+.pcard-v-hover-wishbtn>span{
+    display: none;
+}
+.pcard-v-hover-buybtn>span{
+    display: none;
+}
+.pcard-v-hover-wishbtn>img{
+    margin: 0 auto;
+}
+.pcard-v-hover-buybtn>img{
+    margin: 0 auto;
+}
+.pagination-number{
+    margin-right: 10px;
+}
 
 
 
@@ -3618,7 +3701,7 @@ text-transform:uppercase;
         display: block;
         float: left;
         width: 100%;
-        height: 128px;
+        height: 140px;
     }
     .cta-call>p {
         text-align: center;
@@ -3627,7 +3710,7 @@ text-transform:uppercase;
         margin: 23px auto 13px;
     }
     .cta-call>input[type="submit"] {
-        margin: 0 auto;
+        margin: 0 auto 24px;
         display: block;
         color: #fff;
         background: #ffcc00;
