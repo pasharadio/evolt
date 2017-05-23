@@ -1507,11 +1507,10 @@ border-color: transparent transparent #ffffff transparent;
     height: 30px;
     box-sizing: border-box;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
     cursor: pointer;
+    padding: 9px;
 }
 .fa-plus-circle,
 .fa-times-circle {
@@ -1786,10 +1785,9 @@ footer {
     width: 100%;
     height: 120px;
     background: #575757;
-    padding: 0 38px;
+    padding: 50px 38px;
     float: left;
-    display: flex;
-    align-items: center;
+    display: block;
     box-sizing: border-box;
 }
 footer>.coryright {
@@ -1842,6 +1840,12 @@ font-size: 14px;
     background-position-x: -8px;
     padding-left: 40px;
     }
+    .faq-block>img {
+    margin-left: 7px;
+}
+.faq-block>p{
+    margin-left: 40px;
+}
 }
 @media screen and (min-width: 768px) {
     .header-fixed {
@@ -1854,6 +1858,14 @@ font-size: 14px;
     .menu-icon-tablet {
         display: none;
         visibility: hidden;
+    }
+    footer>.coryright{
+    font-size: 16px;
+        width: 20%;
+    }
+    footer>ul>li>a{
+        font-size: 16px;
+            margin-right: 10px;
     }
 }
 @media screen and (max-width: 768px) {
