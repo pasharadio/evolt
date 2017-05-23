@@ -130,22 +130,24 @@ header {
 .header-topline-nav {
     width: 50%;
     height: 60px;
-    display: flex;
+    display: block;
     align-items: center;
     float: left;
     background: #575757;
     font-size: 14px;
     line-height: 18px;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .header-topline-nav-menu {
     width: 65.5%;
-    height: 60px;
-    display: flex;
-    align-items: center;
+    height: 20px;
+    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
+    float: left;
 }
 
 .header-topline-nav-menu-link {
@@ -166,23 +168,25 @@ header {
 
 .header-topline-nav-account {
     width: 34.5%;
-    height: 60px;
-    display: flex;
-    align-items: center;
+    height: 20px;
+    display: block;
+        float: left;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .header-topline-nav-account-register {
-    width: 64%;
+    width: 60%;
     text-align: center;
     border-right: 2px solid #fff;
+        display: inline-block;
 }
 
 .header-topline-nav-account-login {
     width: 36%;
     text-align: center;
+        display: inline-block;
 }
 
 .header-topline-nav-account-register>a,
@@ -204,8 +208,11 @@ header {
     height: 60px;
     background: #cdcdcf;
     float: left;
-    display: flex;
+    display: block;
     align-items: center;
+    position: relative;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .header-topline-wishlist_full-link {
@@ -230,12 +237,15 @@ header {
 }
 
 .header-topline-wishlist_helper>img {
-    width: 100%;
+    height: 100%;
 }
 
 .header-topline-wishlist_helper {
     width: 35%;
     float: right;
+    position: absolute;
+    right: -10px;
+    top: 0;
 }
 
 .header-topline-wishlist_helper:hover .header-topline-wishlist_helper_tooltip {
@@ -317,11 +327,12 @@ header {
     width: 15%;
     height: 60px;
     float: left;
-    display: flex;
-    align-items: center;
+    display: block;
     background: #fedf22 url(../img/cart.png)center left no-repeat;
     position: relative;
     text-align: center;
+        padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .header-topline-cart-link {
