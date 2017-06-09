@@ -1,41 +1,44 @@
-<!--collapsible cat circle-->
-
 $(".collapsecircle").click(function() {
-    $(this).parent().children(".cat-catalog").toggle();
+	var cont = $(this).parent().children(".cat-catalog"),
+		icon = $(this).find("i");
+	$(".cat-catalog").fadeOut('fast');
+	$(".circle>i").each(function(){
+		if($(this).hasClass("fa-times"))
+			$(this).removeClass("fa-times").addClass("fa-plus")
+				.parent().css("z-index", 0);
+	});
+	if (!cont.is(":visible")){
+		icon.removeClass("fa-plus").addClass("fa-times")
+			.parent().css("z-index", 2);
+		cont.fadeIn();
+	} else {
+		cont.fadeOut();
+		icon.removeClass("fa-times").addClass("fa-plus");
+	}
+});
 
-});
-$(".collapsecircle").click(function() {
-    $(this).find("i").toggleClass('fa-times fa-plus');
-});
-<!--bottom main collapsible list cat-->
 $(document).ready(function() {
     $(".bottom-main-cat-container").hide();
-
-    $(".collapse").click(function() {
-        $(".bottom-main-cat-container").toggle();
-    });
-    $(".collapse").click(function() {
-        $(this).find("i").toggleClass('fa-caret-up fa-caret-down');
-    });
 });
 $(".panelp").show();
 $(".coollp").click(function() {
     $(this).children(".panelp").toggle();
 });
+
 $(".coollp").click(function() {
     $(this).find("i").toggleClass('fa-angle-up fa-angle-down');
 });
-<!--collapsible tabs mob-->
+
 $(".collapse_tabs").click(function() {
     $(this).parent().children(".tabs-content-inner").toggle('slow');
 });
 $(".collapse_tabs").click(function() {
     $(this).find("i").toggleClass('fa-chevron-down fa-chevron-up');
 });
+
 //accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
     acc[i].onclick = function() {
         this.classList.toggle("active");
@@ -47,53 +50,6 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
-
-jQuery(document).ready(function() {
-    jQuery('.home-slider').slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 1200,
-        arrows: false,
-    });
-});
-
-jQuery(document).ready(function() {
-    jQuery('.home-partial-product-slider').slick({
-        dots: false,
-        arrows: false,
-        autoplay: false,
-        autoplaySpeed: 1200,
-        speed: 400,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        centerMode: true,
-        focusOnSelect: true,
-        infite: true,
-        draggable: true,
-        responsive: [{
-            breakpoint: 1200,
-            settings: {
-                //slidesToShow: 3,
-                //slidesToScroll: 3,
-                //infinite: true,
-            }
-        }, {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4,
-                centerPadding: '28%',
-            }
-        }, {
-            breakpoint: 320,
-            settings: {
-                slidesToShow: 2,
-                        centerMode: true,
-                centerPadding: '22%',
-            }
-        }]
-
-    });
-});
 
 jQuery(document).ready(function() {
     jQuery('.product-mainimage-slider').slick({
@@ -169,14 +125,7 @@ jQuery(document).ready(function() {
         }]
     });
 });
-///sticky header menu collapse
-$(document).ready(function() {
-    $(".menu-gamburger-cat-wrapper").hide();
-    $(".catalog-menu-mini").click(function() {
-        $(".menu-gamburger-cat-wrapper").toggle();
-        $('.catalog-menu-mini').toggleClass('bg1 bg2');
-    });
-});
+
 if (document.documentElement.clientWidth < 768) {
 ///sort menu on tablet/mobile
 $(document).ready(function() {
@@ -200,3 +149,130 @@ $(document).ready(function() {
 
 });
 }
+
+//////////////////////////////////////////////////
+$(window).on("scroll", function() {
+	if(!$(".wrapper").hasClass("prod-page")){
+		var menu = $(".header-fixed"),	begin = $("header").height();
+		if (screen.width > '768' && $(window).width() > '768'){
+			if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))
+				menu.addClass("scrolled").fadeIn(300);
+			if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")) {			
+				menu.removeClass("scrolled").fadeOut(0);
+			}
+		}
+	}
+});
+$(window).on("resize", function(){
+	if ($(window).width() < '769')
+		$(".header-fixed").show();
+	else 
+		$(".header-fixed").hide();
+});
+
+if ($(".home-slider").length){
+	$(".home-slider").slick({
+		dots: true,
+		autoplay: false,
+		autoplaySpeed: 10000,
+		arrows: false,
+	});
+}
+
+var slider2 = ".home-partial-product-slider-content";
+if ($(slider2).length)
+	$(slider2).slick({
+		centerMode: true,
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	});
+
+$(".bottom-mc-link>a").on("click", function(){
+	var cols = $(".bm-cols");
+	if (!cols.hasClass("colsClosed")){
+		cols.addClass("colsClosed");
+		cols.slideUp();
+		$(this).text("Развернуть");
+	} else {
+		cols.removeClass("colsClosed");
+		cols.slideDown();
+		$(this).text("Свернуть");
+	}
+	$(this).next("i").toggleClass('fa-caret-up fa-caret-down');
+	return false;
+});
+$(".header-category-list>li:not(:last)").on("click", function(){	
+	var li = $(this), cname = "moreActive",
+	more = li.find(".header-category-list-more");
+	$(".header-category-list>li").each(function(){
+		if($(this).hasClass(cname)){
+			$(this).removeClass(cname)
+				.find(".header-category-list-more").fadeOut();
+		}
+	});
+	if(!li.hasClass(cname) && !more.is(":visible")){
+		li.addClass(cname);
+		more.fadeIn();
+	} else {
+		li.removeClass(cname);
+		more.fadeOut();
+	}
+});
+var timer1;
+$(".catalog-menu-mini > a").on("click", function(){
+	var btn = $(this), cname = "menuOpen", img = btn.find("img"),
+		src1 = "img/menu-icon-hamburger.png", src2 = "img/menu-close.png",
+		list = $(".header-fixed .header-category");
+	function listOpen(){
+		btn.addClass(cname);
+		img.attr("src", src2);
+		list.slideDown();
+	}
+	function listClose(){
+		btn.removeClass(cname);
+		img.attr("src", src1);
+		list.slideUp();
+	}
+	if (!btn.hasClass(cname) && !list.is(":visible")){
+		listOpen();
+		clearInterval(timer1);
+		timer1 = setTimeout(function(){
+			if(btn.hasClass(cname)) listClose();
+		}, 10000);
+	} else {
+		listClose();
+	}
+	return false;
+});
+var timer2, clas = 'disable-hover', $body = $('body');
+$(window).scroll(function() {
+	clearTimeout(timer2);
+	if (!$body.hasClass(clas)) {
+		$body.addClass(clas);
+	}
+	timer2 = setTimeout(function(){
+		$body.removeClass(clas);
+	},500);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
