@@ -2646,7 +2646,7 @@ input[id="color4"]:checked ~ label[for="color4"] {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (min-width: 35em) {}
+/*@media only screen and (min-width: 35em) {}
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {}
@@ -2987,7 +2987,7 @@ input[id="color4"]:checked ~ label[for="color4"] {
     display: block;
     float: left;
 }
-}
+}*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
