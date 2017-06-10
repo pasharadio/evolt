@@ -2646,12 +2646,12 @@ input[id="color4"]:checked ~ label[for="color4"] {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-/*@media only screen and (min-width: 35em) {}
+@media only screen and (min-width: 35em) {}
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {}
 @media screen and (max-width: 1200px) {
-	.header-bottomline-contact {
+/*	.header-bottomline-contact {
 		text-align: center;
 		color: #575757;
 		white-space: nowrap;
@@ -2664,9 +2664,9 @@ input[id="color4"]:checked ~ label[for="color4"] {
 	}
 	.reviewform-wrapper{
 		width: 100%;
-	}
+	}*/
 }
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
 	.desktop-hidden {
 		display: none!important;
 		visibility: hidden!important;
@@ -2679,7 +2679,7 @@ input[id="color4"]:checked ~ label[for="color4"] {
 	footer>ul>li>a {
 		font-size: 16px;
 	}
-}
+}*/
 @media screen and (max-width: 768px) {
 	.header-scrolled {
 		display: none;
@@ -2987,7 +2987,7 @@ input[id="color4"]:checked ~ label[for="color4"] {
     display: block;
     float: left;
 }
-}*/
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
